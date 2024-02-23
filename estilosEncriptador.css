@@ -1,0 +1,231 @@
+html{
+    font-family: "Arial", sans-serif; /* Fuente del texto */
+}
+
+header{
+    width: 10px;
+    margin-top: 20px; /* Ajusta el espacio superior del header */
+    background-color: #EFF1FA; /* Color de fondo */
+}
+
+form label{
+    color: #0A3871;
+}
+
+body{
+    /*width: 940px; /*como buena practica para que se adapte bien a cualquier pantalla*/
+   /*margin: 0 auto; /*para que se centre*/
+   background-color: #EFF1FA;
+}
+
+
+form{
+    margin: 75px; /* Agrega un espaciado de 20px alrededor del formulario */
+    float: left; /* Hace que el formulario flote a la izquierda */
+    width: calc(70% - 2px); /* Define el ancho del contenido principal */
+    /*height: auto /* Ajusta la altura automáticamente según el contenido */
+}
+
+
+
+.texto {
+    border: none; /* Elimina los bordes de la caja de texto */
+    outline: none; /* Elimina el contorno al enfocar la caja de texto */
+    color: #0A3871;
+    background-color: #EFF1FA;
+    font-size: 22px; /* Tamaño de fuente */
+
+    width: calc(100% - 40px); /* Ancho del área de texto */
+    height: 700px; /* Altura inicial del área de texto */
+    resize: vertical; /* Permite redimensionar verticalmente */
+    max-width: 700px; /* Ancho máximo del área de texto */
+}
+
+.botones{
+    position: fixed; /* Posición fija para que los botones se queden en el fondo de la página */
+    bottom: 0; /* Los botones se alinearán en la parte inferior de la página */
+    width: 50%; /* Los botones ocuparán todo el ancho de la página */
+    /*background-color: #ffffff; /* Color de fondo para los botones */
+    padding: 20px; /* Añade espacio alrededor de los botones para mejorar la apariencia */
+    text-align: center; /* Centra los botones horizontalmente */
+    border-radius: 20px; /* Aplica bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+.aclaracion{
+    position: relative;
+    text-align: left;
+}
+
+.encriptar{
+    border-radius: 20px; /* Aplica bordes redondeados */
+    padding: 20px; /* Añade espacio alrededor de los botones para mejorar la apariencia */
+    width: calc(50% - 4px); /* Ajusta el ancho de los botones */
+    background-color: #0A3871; /* color de fondo del boton */
+    border-color: #0A3871; /* Color del borde */
+    color: #EFF1FA;
+}
+
+.desencriptar{
+    border-radius: 20px; /* Aplica bordes redondeados */
+    padding: 20px; /* Añade espacio alrededor de los botones para mejorar la apariencia */
+    width: calc(50% - 4px); /* Ajusta el ancho de los botones */
+    background-color: #CED4DA; /* Color de fondo del boton */
+    border-color: #0A3871; /* Color del borde */
+    color: #0A3871; /* Color del texto */
+}
+
+
+/* Estilo adicional para el texto de referencia */
+.texto::placeholder {
+    color: #0A3871; /* Color del texto de referencia */
+}
+
+.resultados{
+    /*float: right; /* Hace que el contenido principal flote a la derecho */
+
+        position: absolute; /* Hace que el elemento tenga una posición absoluta */
+        top: 20px; /* Lo posiciona en la parte superior del contenedor padre */
+        left: 900px; /* Lo posiciona en la parte izquierda del contenedor padre */
+        z-index: 1; /* Define la profundidad del elemento, asegurando que esté sobre otros elementos */
+        
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra leve */
+    width: calc(30% - 2px); /* Define el ancho del contenido principal */
+    height: 600px; /* Ajusta la altura del elemento */
+    background-color: #F3F5FC;
+    border-radius: 20px; /* Aplica bordes redondeados */
+    text-align: center; /* Centra el texto */
+    overflow-y: auto; /* Habilita el desplazamiento vertical cuando sea necesario */
+}
+
+.resultados img{
+    display: flex;
+    margin-top: 35%; /* Ajusta el espacio superior del header */
+    margin-left: 35px; /* Ajusta el espacio izquierdo del header */
+    margin-right: 5px; /* Ajusta el espacio derecho del header */
+    width: 252px; /* Ancho deseado */
+    height: auto; /*La altura se ajustará automáticamente para mantener la proporción */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.resultados h2{
+    font-weight: bold; /* letra negrita */
+    max-width: 300px; /* Establece el tamaño máximo en píxeles */
+    text-align: center; /* alineacion centrada*/
+    margin-left: 10%; /* espacio que deja a la izquierda */
+}
+
+.resultados p{
+    max-width: 300px; /* Establece el tamaño máximo en píxeles */
+    text-align: center; /* alinear texto al centro */
+    margin-left: 10%; /* espacio separado por la izquierda */
+}
+
+
+.resultados input{
+    border-radius: 20px; /* Aplica bordes redondeados */
+    padding: 20px; /* Añade espacio alrededor de los botones para mejorar la apariencia */
+    width: calc(50% - 4px); /* Ajusta el ancho de los botones */
+    background-color: #EFF1FA; /* color de fondo del boton */
+    border-color: #0A3871; /* Color del borde */
+    color: #0a3871; /* Color de las letras */
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    /* Ajustes generales para el formulario en dispositivos móviles */
+    form {
+        width: 100%; /* El formulario ocupa todo el ancho */
+        margin: 0; /* Elimina el margen */
+        padding: 20px; /* Añade un espacio de 20px alrededor */
+    }
+
+    /* Ajustes específicos para el área de texto en dispositivos móviles */
+    .texto {
+        width: 100%; /* El área de texto ocupa todo el ancho */
+        height: 200px; /* Altura fija de 200px */
+    }
+
+    .botones {
+        position: static; /* Cambiar la posición a estática para que los botones estén arriba */
+        margin-bottom: 20px; /* Añadir margen en la parte inferior para separar los botones de la sección de resultados */
+        text-align: center; /* Centra los botones horizontalmente */
+    }
+
+    .botones .desencriptar{
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    /* Ajustes para el contenedor de resultados en dispositivos móviles */
+    .resultados {
+        width: 100%; /* El contenedor de resultados ocupa todo el ancho */
+        margin: 20px auto; /* Margen de 20px arriba y abajo, centrado horizontalmente */
+        height: 200px; /* Altura fija de 200px */
+        position: relative; /* Establece una posición relativa */
+        top: 0; /* Coloca el contenedor en la parte superior */
+        left: 0; /* Coloca el contenedor en la izquierda */
+        box-shadow: none; /* Elimina la sombra */
+    }
+
+    /* Ajustes para la imagen dentro del contenedor de resultados en dispositivos móviles */
+    .resultados img {
+        display: none; /* Oculta la imagen */
+    }
+
+    /* Ajustes para el título y el párrafo dentro del contenedor de resultados en dispositivos móviles */
+    .resultados h2,
+    .resultados p {
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Ajustes generales para el formulario en tabletas */
+    form {
+        width: 50%; /* El formulario ocupa el 50% del ancho */
+        margin: 0 auto; /* Centra horizontalmente */
+        padding: 20px; /* Añade un espacio de 20px alrededor */
+    }
+
+    /* Ajustes específicos para el área de texto en tabletas */
+    .texto {
+        width: 100%; /* El área de texto ocupa todo el ancho */
+        height: 300px; /* Altura fija de 300px */
+    }
+
+    .botones {
+        position: static; /* Cambiar la posición a estática para que los botones estén arriba */
+        margin-bottom: 20px; /* Añadir margen en la parte inferior para separar los botones de la sección de resultados */
+        /*text-align: center; /* Centra los botones horizontalmente */
+    }
+
+    .botones .desencriptar{
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    /* Ajustes para el contenedor de resultados en tabletas */
+    .resultados {
+        width: 40%; /* El contenedor de resultados ocupa el 40% del ancho */
+        margin: 20px auto; /* Margen de 20px arriba y abajo, centrado horizontalmente */
+        height: 200px; /* Altura fija de 200px */
+        position: relative; /* Establece una posición relativa */
+        top: 0; /* Coloca el contenedor en la parte superior */
+        left: 0; /* Coloca el contenedor en la izquierda */
+        box-shadow: none; /* Elimina la sombra */
+    }
+
+    /* Ajustes para la imagen dentro del contenedor de resultados en tabletas */
+    .resultados img {
+        display: none; /* Oculta la imagen */
+    }
+
+    /* Ajustes para el título y el párrafo dentro del contenedor de resultados en tabletas */
+    .resultados h2,
+    .resultados p {
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+}

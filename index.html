@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+
+    <link rel="stylesheet" href="estilosEncriptador.css">
+
+</head>
+<header>
+<img src="img/Logo.png" alt="Logo de Alura">
+</header>
+
+<body>
+    
+    <form>
+
+        <textarea class="texto" placeholder="Ingrese el texto aqui"></textarea>
+
+        <div class="botones">
+            <p class="aclaracion">&#9888 Solo letras minisculas y sin acentos</p>
+
+            <!-- <input class="encriptar" type="submit" value=”Encriptar”></input>
+
+            <input class="desencriptar" type="submit" value=”Desencriptar”></input> -->
+
+            <!-- si usamos input tyoe submit  botones de Encriptar y Desencriptar provocan que el formulario se envíe cuando se hace clic en ellos pero tambien hace que la página se recargue y no se ejecute el código JavaScript. -->
+
+            <input class="encriptar" type="button" value="Encriptar" onclick="encriptarTexto()"></input>
+
+            <input class="desencriptar" type="button" value="Desencriptar" onclick="desencriptarTexto()"></input>
+
+            
+        </div>
+        
+    </form>
+
+    <div class="resultados">
+
+        <p> </p> <!-- p que va a ser rellenado en el java script por el texto desencriptado o encriptado -->
+
+        <img id="imagenResultado" src="img/Muñeco.png" alt="Muñeco vieendo un diamante">
+
+        <H2 id="tituloResultado">Ningun mensaje fue encontrado</H2>
+
+        <P id="mensajeResultado">Ingresa el texto que desees Encriptar o desencriptar</P>
+
+        <input id="botonCopiar" disabled hidden type="button" value="Copiar" onclick="copiarResultado()">
+
+    </div>
+
+    <script src="encriptacion.js"></script>
+
+</body>
+
+<footer>
+
+</footer>
+</html>
